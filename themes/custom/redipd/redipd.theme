@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains redipd.theme.
+ */
+
+use Drupal\Core\Link;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Url;
+use Drupal\file\Entity\File;
+
+/**
+ * Functions to support theming in DaVinci subtheme.
+ */
+function redipd_preprocess_html(&$variables) {
+  if (\Drupal::moduleHandler()->moduleExists('color')) {
+    $variables['html_attributes']['class'] = 'colors';
+  }
+  $path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $path);
+  if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+    $variables['attributes']['class'][] = 'page-node-' . $path_args[2];
+  }
+  $is_front_page = \Drupal::service('path.matcher')->isFrontPage();
+
+  if ($is_front_page) {
+    $variables['#attached']['library'][] = 'redipd/front';
+  }
+
+  // Load Libraries for Path.
+  if (!empty(isset($path_args[2])))  {
+    $variables['#attached']['library'][] = 'redipd/' .$path_args[1] . '-' . $path_args[2];
+  }
+  else {
+    $variables['#attached']['library'][] = 'redipd/' . $path_args[1];
+  }
+
+}

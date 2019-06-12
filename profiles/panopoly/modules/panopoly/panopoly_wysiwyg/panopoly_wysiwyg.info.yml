@@ -1,0 +1,23 @@
+name: 'Panopoly WYSIWYG'
+description: 'Integrates a WYSIWYG into Drupal.'
+type: module
+core: 8.x
+dependencies:
+  - ckeditor
+  - ckeditor_drupalbreaks
+  - colorbutton
+  - editor
+  - editor_advanced_link
+  - embed
+  - entity_embed
+  - fakeobjects
+  - filter
+  - linkit (>=8.x-5.x)
+  - media
+  - panopoly_media
+package: Panopoly
+
+# Information added by drush on 2018-06-21
+version: '8.x-2.x-dev'
+project: 'panopoly_wysiwyg'
+datestamp: 1529598620

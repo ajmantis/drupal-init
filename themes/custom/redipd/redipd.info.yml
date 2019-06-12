@@ -1,0 +1,24 @@
+name: Redipd
+type: theme
+description: Da Vinci custom subtheme.
+core: 8.x
+base theme: da_vinci
+
+libraries:
+  - redipd/global-css
+  - redipd/global-js
+
+regions:
+  top_bar: 'Extra Top bar'
+  secondary_menu: 'Secondary menu'
+  sliding_panel: 'Sliding panel'
+  header: 'Header'
+  highlighted: 'Highlighted'
+  primary_menu: 'Primary menu'
+  breadcrumb: 'Breadcrumb'
+  featured_top: 'Featured top'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+  footer_info: 'Extra Footer info'

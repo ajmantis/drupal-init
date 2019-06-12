@@ -1,0 +1,6 @@
+services:
+  aepd_general.default:
+    class: Drupal\aepd_general\EventSubscriber\aepdSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }

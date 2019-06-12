@@ -1,0 +1,7 @@
+stepper_angular_app.index:
+  path: '/stepper-angular'
+  defaults:
+    _title: 'Angular Stepper'
+    _controller: '\Drupal\stepper_angular_app\Controller\AngularAppController::build'
+  requirements:
+    _permission: 'access content'

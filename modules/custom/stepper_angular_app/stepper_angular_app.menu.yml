@@ -1,0 +1,5 @@
+stepper_angular_app.admin:
+  title: 'Angular Stepper'
+  description: 'Manage example settings for your site'
+  route_name: stepper_angular_app.index
+  weight: 50

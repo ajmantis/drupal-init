@@ -1,0 +1,142 @@
+// HTML
+
+/// @ignore Font size.
+$default-font-size: $rem-base
+
+html
+  font-size: $default-font-size
+
+// --------------------------------------------------
+
+// BODY
+
+/// @ignore Body background color.
+$body-background-color: $white
+
+/// @ignore Default color.
+$default-color: $black
+
+/// @ignore Default font family.
+$default-font-family: $source-sans
+
+body
+  background-color: $body-background-color
+  color: $default-color
+  font-family: $default-font-family
+  font-weight: 400
+  line-height: 1.4
+
+// --------------------------------------------------
+
+// HEADINGS
+
+/// @ignore Titles font family.
+$title-font-family: $source-sans
+
+/// @ignore Titles color.
+$title-color: $black
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  color: $title-color
+  font-family: $title-font-family
+  font-weight: 700
+  margin: 0
+
+//h2,
+//h3,
+//h4,
+//h5,
+//h6
+  margin: 2rem 0 .75rem
+
+//h2,
+//h3
+  line-height: 1.25
+
+//h4,
+//h5,
+//h6
+  line-height: 1.4
+
+h1
+  font-size: calc-rem(38px)
+  line-height: 1.14
+  margin: 2rem 0 1.5rem
+  +breakpoint($large)
+    font-size: calc-rem(42px)
+    margin: 1.5rem 0
+
+h2
+  font-size: calc-rem(44px)
+  +breakpoint($large)
+    font-size: calc-rem(48px)
+
+h3
+  font-size: calc-rem(16px)
+  +breakpoint($large)
+    font-size: calc-rem(20px)
+
+//h4
+  font-size: calc-rem(28px)
+  +breakpoint($large)
+    font-size: calc-rem(32px)
+
+//h5
+  font-size: calc-rem(24px)
+  +breakpoint($large)
+    font-size: calc-rem(28px)
+
+//h6
+  font-size: calc-rem(20px)
+  +breakpoint($large)
+    font-size: calc-rem(24px)
+
+// --------------------------------------------------
+
+// PARAGRAPHS
+
+//p
+  margin: 0 0 1.2rem
+
+// ------------------------------------------------
+
+// LINKS
+
+/// @ignore Link color.
+//$link-color: $main-color
+
+/// @ignore Link hover color.
+//$link-hover-color: tint($link-color, 15%)
+
+//a
+  color: $link-color
+  display: inline-block
+  text-decoration: none
+  transition: color .2s
+
+  &:hover
+    color: $link-hover-color
+    text-decoration: none
+
+// ------------------------------------------------
+
+// VARIOUS
+
+//summary
+  outline: none
+
+//strong
+  font-weight: 700
+
+//code,
+//kbd,
+//pre,
+//samp
+  font-size: calc-rem(13px)
+
+// ------------------------------------------------

@@ -1,0 +1,9 @@
+stepper_angular_app:
+  version: 1.0
+  css:
+    ./dist/styles.b8126520cb037d550a09.css: {}
+  js:
+    ./dist/runtime.26209474bfa8dc87a77c.js: {}
+    ./dist/es2015-polyfills.c5dd28b362270c767b34.js: {}
+    ./dist/polyfills.c1d375191d808f3e303b.js: {}
+    ./dist/main.924091821c9dbd6da5e3.js: {}

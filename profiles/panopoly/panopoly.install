@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall hooks.
+ */
+
+/**
+ * Implements hook_install_tasks().
+ */
+function panopoly_install_tasks(&$install_state) {
+  $tasks = array();
+  $tasks['panopoly_demo_installer_form'] = array(
+    'display_name' => t('Install demo content'),
+    'type' => 'form',
+    'function' => 'Drupal\panopoly\Installer\Form\PanopolyDemoInstallerForm',
+  );
+  return $tasks;
+}

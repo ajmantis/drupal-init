@@ -1,0 +1,31 @@
+.site-footer
+
+  &::before
+    content: ''
+    background: url('../images/banderas.png')
+    display: block
+    width: 100%
+    height: 11px
+
+  .footer-wrapper
+    background-color: $footer
+    padding: $container-padding
+
+    .region
+      +breakpoint($below-s-small)
+        justify-content: center
+
+      +breakpoint($medium)
+        align-items: center
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+
+      #block-europeunionlogo
+        order: 1
+        +breakpoint($medium)
+          order: 0
+
+        img
+          width: 226px !important
+          height: 72px

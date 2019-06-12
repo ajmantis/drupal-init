@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains aepd_general.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ *
+ */
+function aepd_general_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the aepd_general module.
+    case 'help.page.aepd_general':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for general task') . '</p>';
+      return $output;
+
+    default:
+  }
+}

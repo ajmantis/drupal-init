@@ -1,0 +1,5 @@
+name: AngularStepper
+type: module
+description: 'Angular Stepper'
+package: Custom
+core: 8.x

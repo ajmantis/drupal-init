@@ -1,0 +1,22 @@
+uuid:
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - redipd
+_core:
+  default_config_hash: YJZbxU5KUN7Kjg9DWHyrmg_CxqVkqVdrWT8SJYCeshQ
+id: redipd_content
+theme: redipd
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
